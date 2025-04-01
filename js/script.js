@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
           this.x = x;
           this.y = y;
           this.particles = [];
-          const colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"]; // Добавлены разные цвета
+          const colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"]; 
           for (let i = 0; i < 50; i++) {
             this.particles.push({
               x: this.x,
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
               angle: Math.random() * Math.PI * 2,
               speed: Math.random() * 3 + 1,
               life: 100,
-              color: colors[Math.floor(Math.random() * colors.length)] // Случайный цвет для каждой частицы
+              color: colors[Math.floor(Math.random() * colors.length)] 
             });
           }
         }
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hours = document.getElementById("hours");
     const minutes = document.getElementById("minutes");
     const seconds = document.getElementById("seconds");
-    const targetDate = new Date("2025-03-01T13:30:00");
+    const targetDate = new Date("2025-04-01T13:15:00");
   
     function updateTimer() {
       let now = new Date();
